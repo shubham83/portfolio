@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+  <!-- box icons -->
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <!-- swiper slide js -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+<body class="bg-background">
+ 
+  <!-- header -->
+   <header class="fixed top-0 right-0 left-0 md:py-1 transiton-all duration-300"> 
+    <nav class="max-w-7xl mx-auto bg-gray-800 md:bg-transparent p-5">
+      <div class="flex item-center justify-between">
+        <a href="/" class="text-white font-bold text-lg flex items-center gap-3"><img src="/src/img/logo.svg" alt="">Portfolio</a>
+
+        <!-- nav only for large device -->
+         <div class="hidden md:flex space-x-10">
+           <a href="#home" class="text-primary hover:text-gray-300">Home</a>
+           <a href="#projects" class="text-white hover:text-gray-300">Projects</a>
+           <a href="#resume" class="text-white hover:text-gray-300">Resume</a>
+        </div> 
+        <!-- menu btn,only display on mobile -->
+         <div class="md:hidden ">
+          <button id="mobile-menu-button" class="text-white text-2xl">
+            <i class='bx bx-menu'></i>
+          </button>
+         </div>
+        
+         
+      </div>
+       <!-- mobile menu -->
+      <div id="mobile-menu" class="hidden md:hidden">
+        <a href="#home" class="text-primary hover:text-gray-300 block py-2 hover:bg-gray-700">Home</a>
+        <a href="#projects" class="text-white hover:text-gray-300 block py-2 hover:bg-gray-700">Projects</a>
+        <a href="#resume" class="text-white hover:text-gray-300 block py-2 hover:bg-gray-700">Resume</a>
+      </div>
+    </nav>
+   </header>
+
+   <!-- banner section -->
+   <section class="max-w-7xl mx-auto px-5 my-12" id="home">
+    <div class="py-10 text-white flex flex-col md:flex-row justify-between items-center gap-4"> 
+    <!-- left side -->
+    <div class="md:w-1/2">
+      <p class="text-xl font-inter font-medium mb-4">Hello, <span class="text-primary">I'm</span></p>
+      <h1 class="text-4xl font-bold tracking[3.22px] mb-5 font-inter">Shubham Poddar</h1>
+      <p class="text-2xl font-Montserrat mb-5">UI/UX Designer & Graphic Designer</p>
+      <p class="text-xl mb-12 md:w-3/4 text-justify leading-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis modi esse reprehenderit, in debitis neque veritatis fugit ab temporibus rem, similique quibusdam maxime animi possimus ipsam quas repellat accusamus quia?</p>
+      <button class="py-4 px-10 rounded-md bg-primary text-white font-bold hover:bg-sky-300">Let's Talk</button>
+      <!-- social button -->
+       <div class="mt-12 mb-8 flex gap-4 items-center">
+        <p>Check out My:</p>
+        <div class="flex space-x-3">
+          <a href="#"><img src="/src/icons/instagram.svg" alt="" class="w-8 h-8"></a>
+          <a href="#"><img src="/src/icons/linkedIn.svg" alt="" class="w-8 h-8"></a>
+          <a href="#"><img src="/src/icons/twitter.svg" alt="" class="w-8 h-8"></a>
+          <a href="#"><img src="/src/icons/behance.svg" alt="" class="w-8 h-8"></a>
+        </div>
+       </div>
+    </div>
+    <!-- right side -->
+    <div class="md:w-1/2 order-first md:order-none">
+      <img src="/src/img/hero.svg" alt="" class="w-full md:ml-20">
+    </div>
+    </div>
+   </section>
+
+   <!-- service section -->
+    <section class="max-w-7xl mx-auto px-5 my-6 text-white">
+      <div class="text-center">
+        <p class="font-Montserrat mb-3 font-medium text-xl">My Services</p>
+        <h3 class="text-primary text-3xl font-bold font-inter mb-16">What I Do</h3>
+      </div>
+      <!-- service cards -->
+       <div class="my-16 flex flex-col md:flex-row justify-around items-center gap-12">
+        <div class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl">
+          <img src="/src/img/graphic-design.svg" alt="" class="w-[196px] mb-12 mx-auto">
+          <h5 class="text-center my-5 text-xl">Graphic Designer</h5>
+          <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolorum provident ducimus beatae asperiores veritatis sint vel voluptatem. Similique architecto ducimus dolore fugiat distinctio quis provident laborum suscipit. Cum, recusandae?</p>
+        </div>
+        <div class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl">
+          <img src="/src/img/web-design.svg" alt="" class="w-[196px] mb-12 mx-auto">
+          <h5 class="text-center my-5 text-xl">Web Designer</h5>
+          <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolorum provident ducimus beatae asperiores veritatis sint vel voluptatem. Similique architecto ducimus dolore fugiat distinctio quis provident laborum suscipit. Cum, recusandae?</p>
+        </div>
+        <div class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl">
+          <img src="/src/img/ux-design.svg" alt="" class="w-[196px] mb-12 mx-auto">
+          <h5 class="text-center my-5 text-xl">UX/UI Designer</h5>
+          <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolorum provident ducimus beatae asperiores veritatis sint vel voluptatem. Similique architecto ducimus dolore fugiat distinctio quis provident laborum suscipit. Cum, recusandae?</p>
+        </div>
+       </div>
+    </section>
+
+    <!-- project section -->
+     <section class="px-5 my-32 mx-auto max-w-7xl" id="projects">
+      <div class="text-center text-white">
+        <h3 class="text-3xl font-bold">Recent <span class="text-primary">Projects</span></h3>
+        <p class="mb-6 md:w-3/4 md:px-12 mx-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, ab quo? Id veritatis impedit itaque, et obcaecati optio minus consequuntur, asperiores eaque distinctio enim atque voluptatem velit neque. At, similique.</p>
+      </div>
+      <!-- projects card -->
+      <div class="flex md:flex-row flex-col items-center justify-center gap-8 my-20">
+          <div class="border border-primary shadow-xl shadow-[#5dadec3b] md:w-[741px] md:h-96 mx-auto rounded-2xl p-5 md:p-0">
+            <img src="/src/img/project-1.svg" alt="" class="p-5 w-full cursor-pointer
+            hover:scale-105 transition-all duration-300">
+          </div>
+          <div class="border border-primary shadow-xl shadow-[#5dadec3b] md:w-[741px] md:h-96 mx-auto rounded-2xl p-5 md:p-0">
+            <img src="/src/img/project-2.svg" alt="" class="p-5 w-full cursor-pointer hover:scale-105 transition-all duration-300">
+          </div>
+      </div>
+     </section>
+     <!-- testimonial section -->
+      <section class="my-16 max-w-7xl px-5 mx-auto" id="resume">
+        <div class="text-center">
+          <p class="font-Montserrat mb-3 font-medium text-xl text-white">Testimonials</p>
+          <h3 class="text-primary text-3xl font-bold font-inter mb-16">What Our Customer Say</h3>
+        </div>
+        <!-- review cards --->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide py-8 px-3 text-white">
+              <img src="/src/img/review1.svg" alt="">
+              <p class="text-sm px-2 my-5 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iusto voluptatibus aut non impedit est saepe rerum cumque asperiores enim, placeat nulla sunt unde eum voluptatum laudantium cum, repudiandae ullam.</p>
+              <h5 class="text-primary mb-2">Rick Wright</h5>
+              <p class="text-sm px-2">Executive Engineer</p>
+            </div>
+            <div class="swiper-slide py-8 px-3 text-white">
+              <img src="/src/img/review2.svg" alt="">
+              <p class="text-sm px-2 my-5 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iusto voluptatibus aut non impedit est saepe rerum cumque asperiores enim, placeat nulla sunt unde eum voluptatum laudantium cum, repudiandae ullam.</p>
+              <h5 class="text-primary mb-2">Rick Wright</h5>
+              <p class="text-sm px-2">Executive Engineer</p>
+            </div>
+            <div class="swiper-slide py-8 px-3 text-white">
+              <img src="/src/img/review3.svg" alt="">
+              <p class="text-sm px-2 my-5 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iusto voluptatibus aut non impedit est saepe rerum cumque asperiores enim, placeat nulla sunt unde eum voluptatum laudantium cum, repudiandae ullam.</p>
+              <h5 class="text-primary mb-2">Rick Wright</h5>
+              <p class="text-sm px-2">Executive Engineer</p>
+            </div>
+            <div class="swiper-slide py-8 px-3 text-white">
+              <img src="/src/img/review1.svg" alt="">
+              <p class="text-sm px-2 my-5 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iusto voluptatibus aut non impedit est saepe rerum cumque asperiores enim, placeat nulla sunt unde eum voluptatum laudantium cum, repudiandae ullam.</p>
+              <h5 class="text-primary mb-2">Rick Wright</h5>
+              <p class="text-sm px-2">Executive Engineer</p>
+            </div>
+            <div class="swiper-slide py-8 px-3 text-white">
+              <img src="/src/img/review2.svg" alt="">
+              <p class="text-sm px-2 my-5 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iusto voluptatibus aut non impedit est saepe rerum cumque asperiores enim, placeat nulla sunt unde eum voluptatum laudantium cum, repudiandae ullam.</p>
+              <h5 class="text-primary mb-2">Rick Wright</h5>
+              <p class="text-sm px-2">Executive Engineer</p>
+            </div>
+            <div class="swiper-slide py-8 px-3 text-white">
+              <img src="/src/img/review3.svg" alt="">
+              <p class="text-sm px-2 my-5 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iusto voluptatibus aut non impedit est saepe rerum cumque asperiores enim, placeat nulla sunt unde eum voluptatum laudantium cum, repudiandae ullam.</p>
+              <h5 class="text-primary mb-2">Rick Wright</h5>
+              <p class="text-sm px-2">Executive Engineer</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        
+      </section>
+
+      <!-- footer section -->
+
+      <footer class="max-w-7xl mx-auto px-5 my-16">
+        <h4 class="text-2xl text-white pt-12 mb-12">Porfolio</h4>
+        <div class="text-white md:ml-16 flex flex-col md:flex-row justify-between md:items-center gap-6">
+            <div class="md:w-1/3">
+              <h5>Company</h5>
+              <a href="#" class="block my-2 text-sm text-slate-300">About Us</a>
+              <a href="#" class="block my-2 text-sm text-slate-300">Why Choose me</a>
+              <a href="#" class="block my-2 text-sm text-slate-300">Pricing</a>
+              <a href="#" class="block my-2 text-sm text-slate-300">Testimonial</a>
+            </div>
+            <div class="md:w-1/3">
+              <h5>Resources</h5>
+              <a href="#" class="block my-2 text-sm text-slate-300">Privacy Policy</a>
+              <a href="#" class="block my-2 text-sm text-slate-300">Terms and Condition</a>
+              <a href="#" class="block my-2 text-sm text-slate-300">Blog</a>
+              <a href="#" class="block my-2 text-sm text-slate-300">Contact Us</a>
+            </div>
+            
+            <div class="md:w-1/3">
+              <h5 class="mb-5">Subscribe to our Newsletter</h5>
+              <div class="relative">
+                <input type="email" name="" id="email" class="bg-[#2B2E3C] py-5 pl-5 rounded-lg">
+                <input type="submit" value="Subscribe" class="bg-primary py-4 px-8 rounded-lg absolute left-44 top-1 cursor-pointer">
+              </div>
+            </div>
+        </div>
+      </footer>
+
+
+   <script src="/src/app.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="/src/review.js"></script>
+</body>
+</html>
